@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body,nav,dl,dt,dd,p,h1,h2,h3,h4,ul,ol,li,input,button,textarea,footer{
+    margin:0;
+    padding:0;
+}
+u,em,i{
+    font-style:normal;text-decoration: none;}
+a{text-decoration: none;}
+body{
+    background:#fff;
+    min-width:320px;
+    max-width:750px;
+    color:#252525;
+    -webkit-tap-highlight-color: transparent;
+}
+html{
+    font-family:Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体",sans-serif;
+    font-size: 62.5%;
+    -webkit-text-size-adjust:100%;   /*让谷歌浏览器可以设定字体大小*/
+    -ms-text-size-adjust:100%;
+    max-width:750px;
+    min-width:320px;
+    margin:auto;
+}
+button{border:none;}
+/* 设置HTML5元素为块 */
+article,aside,details,figcaption,figure,footer,header,menu,nav,section {
+display:block;
+}
+/* 设置图片视频等自适应调整 */
+img {
+width: 100%;
+display:block;font-size: 0;border:0;
+height:auto;
+width:auto\9; /* ie8 
+*/}
+.video embed,.video object,.video iframe {
+width:100%;
+height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+}
+form{
+    display:inline;..
+}
+ul,ol{
+    list-style:none;
+}
+input,button,textarea{outline:none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../../../font/iconfont.eot'); /* IE9*/
+    src: url('../../../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont"!important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    }
+.l-btn{
+    border-radius: 10px;
+}
+.lf-left{
+    float: left;
+}
+
+@media screen and (max-width: 750px){
+    .l-btn{
+        border-radius: 5px;
+    }
+}
+.clear:after{
+	content:"";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
